@@ -1,0 +1,22 @@
+<div class="product-area" style="height: 600px;">
+    <div class="container">
+        <h2 class="product-area-title">CATEGORIES</h2>
+        <div class="row" id="products-dom">
+                {% for category in categories %}
+                    <div class="col-lg-3 col-md-6">
+                        <a href="{% url "category_page" category.slug%}">
+                            <div class="product">
+                                <div class="product-image">
+                                    <img style="height: 170px;" src="{{category.image.url}}" alt="category">
+                                </div>
+                                <div class="product-hover">
+                                    <button class="btn-add-to-cart">{{category.name}}
+                                    </button>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                {% endfor %}
+        </div>
+    </div>
+</div>

@@ -1,0 +1,276 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(64, 64, 64);
+    
+}
+.navbar-dark{
+    width: 100%;
+    height: 100%;
+}
+#offcanvasDarkNavbarLabel{
+    font-size: 37px;
+    color: #FFB338;
+    margin-top: 5px;
+}
+.header-area .navbar-right .cart-btn .cart-items {
+    position: absolute;
+    background-color: #FFB338;
+    color: #fff;
+    font-weight: bold;
+}
+
+.header-area .navbar-right .cart-btn .fa-cart-shopping {
+    font-size: 2rem;
+    color: #fff;
+}
+.banner-area{
+    margin-top: 10px;
+    width: 100%;
+    height: 1400px;
+}
+.banner{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.banner-image{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    
+}
+
+.banner .banner-image > img{
+    height: 100%;
+    width: 1320px;
+}
+
+.banner-area .banner-content {
+    gap: 80px;
+    position: absolute;
+    width: 100%;
+    top: 15%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin-top: 3.125rem;
+}
+
+.banner-area .banner-content-subtitle {
+    color: #282825;
+    font-size: 80px;
+    letter-spacing: 0.2rem;
+    font-weight:bold;
+}
+
+@media (max-width: 768px) {
+    .banner-area .banner-content-subtitle {
+    font-size: 1.125rem;
+    }
+}
+
+.banner-area .banner-content-title {
+    font-size: 42px;
+    color: #282825;
+    font-family: 'Times New Roman', Times, serif;
+    margin-top: 1.875rem;
+    font-weight: bold;
+}
+
+@media (max-width: 768px) {
+    .banner-area .banner-content-title {
+    font-size: 28px;
+    text-align: center;
+    }
+}
+
+.banner-area .banner-content-link {
+    color: #181813;
+    font-size: 1.5rem;
+    letter-spacing: 0.05rem;
+    text-decoration: none;
+    font-weight: bold;
+    background: #FFB338;
+    padding: 1rem 2.875rem;
+    border-radius: 30px;
+    margin-top: 1.875rem;
+}
+
+@media (max-width: 768px) {
+    .banner-area .banner-content-link {
+    padding: .5rem 1.875rem;
+    font-size: 0.875rem;
+    }
+}
+.product-area {
+margin-top: 1.5rem;
+}
+
+.product-area-title {
+font-size: 3rem;
+font-family: 'Times New Roman', Times, serif;
+font-weight: bold;
+text-align: center;
+}
+
+@media (max-width: 768px) {
+.product-area-title {
+    font-size: 2rem;
+}}
+
+.product-area .product {
+position: relative;
+margin-bottom: 2rem;
+border: 4px solid transparent;
+border-radius: 0.875rem;
+-webkit-transition: .5s ease all;
+transition: .5s ease all;
+}
+
+.product-area .product-image > img {
+width: 100%;
+height: 138px;
+border-radius: 0.625rem;
+cursor: pointer;
+}
+
+.product-area .product-hover {
+width: 100%;
+display: -webkit-box;
+display: -ms-flexbox;
+display: flex;
+-webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+        justify-content: space-between;
+position: absolute;
+bottom: 0;
+background:rgba(24, 24, 19, 0);
+background: linear-gradient(0deg, #181813 0%, rgba(24, 24, 19, 0) 174.29%);
+border-radius: 0px 0px 10px 10px;
+padding: 1rem;
+-webkit-transition: .5s ease all;
+transition: .5s ease all;
+}
+
+.product-area .product-hover .product-title {
+font-size: 1.5rem;
+color: #fff;
+font-family: 'Jacques Francois', serif;
+cursor: pointer;
+}
+
+.product-area .product-hover .product-price {
+text-align: center;
+font-size: 1.5rem;
+color: #fff;
+font-family: 'Jacques Francois', serif;
+cursor: pointer;
+}
+
+.product-area .product-hover .btn-add-to-cart {
+width: 5rem;
+display: -webkit-box;
+display: -ms-flexbox;
+display: flex;
+-webkit-box-align: center;
+    -ms-flex-align: center;
+        align-items: center;
+-webkit-box-pack: center;
+    -ms-flex-pack: center;
+        justify-content: center;
+background: #FFB338;
+border-radius: 30%;
+border: 3px solid transparent;
+-webkit-transition: .5s ease all;
+transition: .5s ease all;
+cursor: pointer;
+}
+
+.product-area .product-hover .btn-add-to-cart:focus {
+border-color: #fff;
+}
+
+.product-area .product-hover .btn-add-to-cart > .fa-cart-shopping {
+color: #fff;
+pointer-events: none;
+}
+
+.product-area .product:hover {
+border-color: #FFB338;
+}
+
+.product-area .product:hover .product-hover {
+opacity: 1;
+}
+
+.login-page{
+    margin-top: 3rem;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card-border{
+    background-color: #212529;
+    height: 100%;
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid transparent;
+    border-radius: 10px;
+}
+.card-text{
+    font-size: 1.4rem;
+}
+.mb-3{
+    gap: 5rem;
+}
+#button{
+    margin-top: 20px;
+    justify-content: center;
+}
+
+.bag{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.bag-title{
+    margin-left: 10px;
+    font-weight: bold;
+}
+.bag-container{
+    width: 70%;
+    height: 180px;
+    border: 1px solid black ;
+    border-left: white;
+    border-right: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.buttons{
+    display: flex;
+    flex-direction: column;
+}

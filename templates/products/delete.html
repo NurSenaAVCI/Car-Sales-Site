@@ -1,0 +1,21 @@
+{% extends "layout.html" %}
+{% load static %}
+
+{% block content %}
+
+    {% include "components/_header.html" %}
+
+    <div class="container">
+        <form action="" method='POST'>
+            {% csrf_token %}
+            <div class="card w-75 mb-3">
+                <div class="card-body">
+                <h5 class="card-title">Are You Sure You Want to Delete the Product {{product.title}}?</h5>
+                <button type="submit" class="btn btn-danger w-25">Delete</button>
+                <a href="{% url "category_page" category.slug %}" class="btn btn-primary w-25">No</a>
+                </div>
+            </div>
+        </form>
+    </div>
+
+{% endblock content %}

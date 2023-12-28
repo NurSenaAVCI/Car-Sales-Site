@@ -1,0 +1,25 @@
+{% extends "layout.html" %}
+{% load static %}
+
+{% block content %}
+
+{% include "components/_header.html" %}
+
+<div class="bag mt-5">
+  <h2 class="bag-title">YOUR BAG</h2>
+  {% for item in bagitems %}
+    <div class="bag-container mt-3">
+        <img class="img-fluid" style="width: 316px; height: 158px;" src="{{item.product.image.url}}" alt="">
+        <span class="product-name">{{item.product.title}}</span>
+        <span class="product-price">{{item.product.price}}</span>
+        <span class="total-quantity">{{item.quantity}}</span>
+        <span class="total-value">Total : {{item.price}} £</span>
+        <a href="{% url 'remove_from_bag' item.id %}"><button class="btn-clear" type="button">CLEAR</button></a>
+        
+    </div>
+  {% endfor %}
+</div>
+    
+{% endblock content %}
+
+

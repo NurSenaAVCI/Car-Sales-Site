@@ -1,0 +1,27 @@
+{% extends "layout.html" %}
+{% load static %}
+
+{% block content %}
+
+    {% include "components/_header.html" %}
+
+    <div class="container my-5">
+        <div class="row">
+            <h3>Add Product</h3>
+        </div>
+        <div class="col-sm-2 border-end">
+            <ul class="list-unstyled">
+                <li class="d-grid"></li>
+            </ul>
+        </div>
+
+        <div class="col-sm-8 offset-sm-1">
+            <form action="" method="POST" enctype="multipart/form-data">
+                {% csrf_token %}
+                {{form.as_p}}
+                <button class="btn btn-primary w-25" type="submit">Add</button>
+            </form>
+        </div>
+    </div>
+
+{% endblock content %}

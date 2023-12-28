@@ -1,0 +1,23 @@
+{% extends "layout.html" %}
+{% load static %}
+
+{% block content %}
+
+{% include "components/_header.html" %}
+
+<div class="login-page">
+    <div class="card-border" >
+        <h5 class="card-text">Sign Up</h5>
+        <form method="POST" class="card-form" style="color: #fff;">
+            {% csrf_token %}
+            {{form}}
+            <div class="mb-3" id="button">
+                <a href="">
+                    <button type="submit" class="btn btn-primary mb-3 w-100">Sign Up</button>
+                </a>
+            </div>
+        </form>
+    </div>
+</div>
+
+{% endblock content %}
