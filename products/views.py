@@ -11,7 +11,7 @@ def Page_404(request, exception):
     return render(request, '404/404.html', {})
 
 def handler500(request):
-    return render(request, '400/500.html', status=500)
+    return render(request, '404/500.html', status=500)
 
 def index_view(request):
     categories = Category.objects.all()
